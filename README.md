@@ -1,4 +1,4 @@
-# Slack Pull Request Open Notification
+# Slack Pull Request Notification
 ## This repo is a fork of [jun3453/slack-pr-notification-action](https://github.com/marketplace/actions/slack-pr-open-notification)
 Use GitHub Actions to notify Slack that a pull request has been opened.
 
@@ -8,7 +8,7 @@ Use GitHub Actions to notify Slack that a pull request has been opened.
 Add the following YAML to your new GitHub Actions workflow:
 
 ```yaml
-name: Slack Pull Request Open Notification
+name: Slack Pull Request Notification
 
 on:
   pull_request:
