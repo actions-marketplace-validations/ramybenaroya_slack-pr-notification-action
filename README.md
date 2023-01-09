@@ -31,6 +31,7 @@ jobs:
         PULL_REQUEST_COMPARE_BRANCH_NAME : ${{ github.event.pull_request.head.ref }}
         PULL_REQUEST_BASE_BRANCH_OWNER: ${{ github.event.pull_request.base.repo.owner.login }}
         PULL_REQUEST_BASE_BRANCH_NAME : ${{ github.event.pull_request.base.ref }}
+        MESSAGE_COLOR : "#00ff00"
         IS_SEND_HERE_MENTION : true
         MAKE_PRETTY : false
         MAKE_COMPACT : false
