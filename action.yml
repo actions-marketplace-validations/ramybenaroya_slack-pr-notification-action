@@ -1,4 +1,4 @@
-name: "Slack pr open notification"
+name: "Slack pr open notification Fork"
 author: "ramybenaroya"
 description: "Use github actions to notify slack that a pull request has been opened."
 runs:
