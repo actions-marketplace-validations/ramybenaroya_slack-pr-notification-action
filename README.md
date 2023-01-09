@@ -71,6 +71,10 @@ If set to 'true', it will add the branch owner in front of the branch name ('own
 
 ![make_compact and is_pr_fork](https://raw.githubusercontent.com/ramybenaroya/slack-pr-notification-action/images/make_compact_fork.png)
 
+#### MESSAGE_COLOR
+**string (Optional)**
+The color for the slack message
+
 #### SEND_USER_ID_MENTIONS
 **string (Optional)**
 Throw mentions to a specific user.
