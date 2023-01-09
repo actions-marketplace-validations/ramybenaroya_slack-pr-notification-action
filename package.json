@@ -1,5 +1,5 @@
 {
-  "name": "slack-pr-open-notification-action",
+  "name": "slack-pr-notification-action",
   "version": "0.0.1",
   "description": "Use github actions to notify slack that a pull request has been opened.",
   "main": "index.js",
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ramybenaroya/slack-pr-open-notification-action.git"
+    "url": "git+https://github.com/ramybenaroya/slack-pr-notification-action.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ramybenaroya/slack-pr-open-notification-action/issues"
+    "url": "https://github.com/ramybenaroya/slack-pr-notification-action/issues"
   },
-  "homepage": "https://github.com/ramybenaroya/slack-pr-open-notification-action#readme"
+  "homepage": "https://github.com/ramybenaroya/slack-pr-notification-action#readme"
 }
