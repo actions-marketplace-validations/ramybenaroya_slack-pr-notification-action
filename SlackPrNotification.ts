@@ -11,6 +11,7 @@ const compareBranchOwner: string = process.env.PULL_REQUEST_COMPARE_BRANCH_OWNER
 const compareBranchName: string = process.env.PULL_REQUEST_COMPARE_BRANCH_NAME;
 const baseBranchOwner: string = process.env.PULL_REQUEST_BASE_BRANCH_OWNER;
 const baseBranchName: string = process.env.PULL_REQUEST_BASE_BRANCH_NAME;
+const color: string = process.env.MESSAGE_COLOR || '#238636'
 
 const sendHereMention: string = process.env.IS_SEND_HERE_MENTION.toLowerCase() === "true" ? "<!here>" : "";
 const sendUserIDMentions: string = process.env.SEND_USER_ID_MENTIONS ? process.env.SEND_USER_ID_MENTIONS.split(",").map(id => {
@@ -33,7 +34,7 @@ if (makePretty) {
     const message: Object = {
         attachments: [
             {
-                color: "#00ff00",
+                color,
                 blocks: [
                     {
                         type: "section",

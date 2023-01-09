@@ -1,7 +1,8 @@
 # Slack Pull Request Open Notification
+## This repo is a fork of [jun3453/slack-pr-open-notification-action](https://github.com/marketplace/actions/slack-pr-open-notification)
 Use GitHub Actions to notify Slack that a pull request has been opened.
 
-![example](https://raw.githubusercontent.com/jun3453/slack-pr-open-notification-action/images/example.png)
+![example](https://raw.githubusercontent.com/ramybenaroya/slack-pr-open-notification-action/images/example.png)
 
 ## Usage
 Add the following YAML to your new GitHub Actions workflow:
@@ -36,7 +37,7 @@ jobs:
         IS_PR_FROM_FORK: false
         SEND_USER_ID_MENTIONS : ABCDE12345,AAABBBCCCC
         SEND_GROUP_ID_MENTIONS : GROUPIDDDD,GGGGROUPID
-      uses: jun3453/slack-pr-open-notification-action@v1.3.0
+      uses: ramybenaroya/slack-pr-open-notification-action@v1.3.0
 ```
 
 ### Arguments
@@ -54,20 +55,20 @@ Whether to include the '@here' Slack mention when sending a message.
 **boolean (DEFAULT: false)**  
 Pretty prints the information. Adds a "See Pull Request" button.
 
-![make_pretty](https://raw.githubusercontent.com/jun3453/slack-pr-open-notification-action/images/make_pretty.png)
+![make_pretty](https://raw.githubusercontent.com/ramybenaroya/slack-pr-open-notification-action/images/make_pretty.png)
 
 #### MAKE_COMPACT
 **boolean (DEFAULT: false)**  
 Smaller visual footprint.
 
-![make_compact](https://raw.githubusercontent.com/jun3453/slack-pr-open-notification-action/images/make_compact.png)
+![make_compact](https://raw.githubusercontent.com/ramybenaroya/slack-pr-open-notification-action/images/make_compact.png)
 
 #### IS_PR_FROM_FORK
 **boolean (DEFAULT: false)**  
 Whether notifications should support PRs from forks. By default, only the branch name is listed when sending a message.  
 If set to 'true', it will add the branch owner in front of the branch name ('owner:branch' vs 'branch'). If this option is used, you may need to enable fork pull request workflows under your repository's Actions settings.
 
-![make_compact and is_pr_fork](https://raw.githubusercontent.com/jun3453/slack-pr-open-notification-action/images/make_compact_fork.png)
+![make_compact and is_pr_fork](https://raw.githubusercontent.com/ramybenaroya/slack-pr-open-notification-action/images/make_compact_fork.png)
 
 #### SEND_USER_ID_MENTIONS
 **string (Optional)**

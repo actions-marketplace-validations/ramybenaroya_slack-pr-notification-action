@@ -12,6 +12,7 @@ var compareBranchOwner = process.env.PULL_REQUEST_COMPARE_BRANCH_OWNER;
 var compareBranchName = process.env.PULL_REQUEST_COMPARE_BRANCH_NAME;
 var baseBranchOwner = process.env.PULL_REQUEST_BASE_BRANCH_OWNER;
 var baseBranchName = process.env.PULL_REQUEST_BASE_BRANCH_NAME;
+var color = process.env.MESSAGE_COLOR || '#238636';
 var sendHereMention = process.env.IS_SEND_HERE_MENTION.toLowerCase() === "true" ? "<!here>" : "";
 var sendUserIDMentions = process.env.SEND_USER_ID_MENTIONS ? process.env.SEND_USER_ID_MENTIONS.split(",").map(function (id) {
     return "<@" + id + ">";
@@ -29,7 +30,7 @@ if (makePretty) {
     var message = {
         attachments: [
             {
-                color: "#00ff00",
+                color: color,
                 blocks: [
                     {
                         type: "section",
